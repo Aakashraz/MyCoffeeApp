@@ -65,6 +65,7 @@ fun HomeScreen() {
             )
 
             Spacer(modifier = Modifier.height(6.dp))
+
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
@@ -75,11 +76,15 @@ fun HomeScreen() {
                     fontSize = 18.sp
                 )
                 Icon(
-                    painter = painterResource(id = R.drawable.ic_keyboard_arrow_down_rounded_24dp),
+                    painter = painterResource(R.drawable.ic_keyboard_arrow_down_rounded_24dp),
                     contentDescription = "Change Location",
                     tint = Color.Gray
                 )
             }
+
+            Spacer(modifier = Modifier.height(40.dp))
+
+            MySearchBar()
         }
     }
 }
