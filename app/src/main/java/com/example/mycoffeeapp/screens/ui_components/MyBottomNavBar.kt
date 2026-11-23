@@ -14,11 +14,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.mycoffeeapp.R
+import com.example.mycoffeeapp.ui.theme.LightBrown
 
 
 @Preview(showBackground = true, device = "spec:width=411dp,height=891dp")
 @Composable
-fun MyNavBar() {
+fun MyBottomNavBar() {
 
     // Bottom Navigation Bar
     val navItems = listOf(
@@ -45,8 +46,8 @@ fun MyNavBar() {
                 selected = true,
                 alwaysShowLabel = false,
                 colors = NavigationBarItemDefaults.colors(
-                    selectedIconColor = MaterialTheme.colorScheme.primary,
-                    selectedTextColor = MaterialTheme.colorScheme.primary,
+                    selectedIconColor = LightBrown,
+                    selectedTextColor = LightBrown,
                     unselectedIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
                     unselectedTextColor = MaterialTheme.colorScheme.onSurfaceVariant,
                     indicatorColor = MaterialTheme.colorScheme.secondaryContainer
