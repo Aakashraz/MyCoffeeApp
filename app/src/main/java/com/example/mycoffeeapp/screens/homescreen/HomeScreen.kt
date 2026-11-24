@@ -1,5 +1,6 @@
 package com.example.mycoffeeapp.screens.homescreen
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -82,9 +83,19 @@ fun HomeScreen() {
                 )
             }
 
-            Spacer(modifier = Modifier.height(40.dp))
+            Spacer(modifier = Modifier.height(30.dp))
 
             MySearchBar()
+
+            Spacer(modifier = Modifier.height(40.dp))
+
+            Image(
+                painter =  painterResource(R.drawable.banner_1),
+                contentDescription = "Banner Screen"
+            )
+
+            Categories()
+
         }
     }
 }
