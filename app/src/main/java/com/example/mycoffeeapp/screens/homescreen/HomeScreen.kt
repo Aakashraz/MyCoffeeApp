@@ -94,6 +94,8 @@ fun HomeScreen() {
                 contentDescription = "Banner Screen"
             )
 
+            Spacer(modifier = Modifier.height(16.dp))
+
             Categories()
 
         }
