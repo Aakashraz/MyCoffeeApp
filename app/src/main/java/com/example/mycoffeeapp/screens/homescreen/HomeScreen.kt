@@ -60,45 +60,6 @@ fun HomeScreen() {
                 .padding(16.dp)
                 .padding(innerPadding)
         ) {
-            Text(
-                text = "Location",
-                color = Color.Gray,
-                fontSize = 14.sp
-            )
-
-            Spacer(modifier = Modifier.height(6.dp))
-
-            Row(
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Text(
-                    text = location,
-                    color = Color.White,
-                    fontWeight = FontWeight.SemiBold,
-                    fontSize = 18.sp
-                )
-                Icon(
-                    painter = painterResource(R.drawable.ic_keyboard_arrow_down_rounded_24dp),
-                    contentDescription = "Change Location",
-                    tint = Color.Gray
-                )
-            }
-
-            Spacer(modifier = Modifier.height(30.dp))
-
-            MySearchBar()
-
-            Spacer(modifier = Modifier.height(40.dp))
-
-            Image(
-                painter =  painterResource(R.drawable.banner_1),
-                contentDescription = "Banner Screen"
-            )
-
-            Spacer(modifier = Modifier.height(16.dp))
-
-            Categories()
-
             // Displaying Products
             val products = listOf(
                 Product(1, "Expresso", "Strong & Rich", 2.99, R.drawable.coffee_2),
@@ -108,9 +69,49 @@ fun HomeScreen() {
                 Product(5, "Macchiato", "Bold & Milky", 4.60, R.drawable.coffee_5),
                 Product(6, "FLat White", "Velvety smooth", 4.40, R.drawable.coffee_6),
                 Product(7, "Iced Mocha", "Refreshing & Rich", 4.70, R.drawable.coffee_4),
-
-
             )
+
+            ProductsGrid(products=products) {
+
+                Text(
+                    text = "Location",
+                    color = Color.Gray,
+                    fontSize = 14.sp
+                )
+
+                Spacer(modifier = Modifier.height(6.dp))
+
+                Row(
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = location,
+                        color = Color.White,
+                        fontWeight = FontWeight.SemiBold,
+                        fontSize = 18.sp
+                    )
+                    Icon(
+                        painter = painterResource(R.drawable.ic_keyboard_arrow_down_rounded_24dp),
+                        contentDescription = "Change Location",
+                        tint = Color.Gray
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(30.dp))
+
+                MySearchBar()
+
+                Spacer(modifier = Modifier.height(40.dp))
+
+                Image(
+                    painter =  painterResource(R.drawable.banner_1),
+                    contentDescription = "Banner Screen"
+                )
+
+                Spacer(modifier = Modifier.height(16.dp))
+
+                Categories()
+            }
 
         }
     }
