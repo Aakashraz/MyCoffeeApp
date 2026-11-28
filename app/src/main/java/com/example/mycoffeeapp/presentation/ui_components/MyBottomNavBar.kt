@@ -1,7 +1,6 @@
-package com.example.mycoffeeapp.screens.ui_components
+package com.example.mycoffeeapp.presentation.ui_components
 
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
@@ -14,7 +13,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.mycoffeeapp.R
-import com.example.mycoffeeapp.ui.theme.LightBrown
+import com.example.mycoffeeapp.presentation.theme.LightBrown
 
 
 @Preview(showBackground = true, device = "spec:width=411dp,height=891dp")

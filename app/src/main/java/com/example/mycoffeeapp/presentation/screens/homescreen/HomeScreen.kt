@@ -1,4 +1,4 @@
-package com.example.mycoffeeapp.screens.homescreen
+package com.example.mycoffeeapp.presentation.screens.homescreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -25,8 +25,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.mycoffeeapp.R
-import com.example.mycoffeeapp.model.Product
-import com.example.mycoffeeapp.screens.ui_components.MyBottomNavBar
+import com.example.mycoffeeapp.domain.model.Product
+import com.example.mycoffeeapp.presentation.ui_components.MyBottomNavBar
 
 
 @Preview(showBackground = true, showSystemUi = true,
